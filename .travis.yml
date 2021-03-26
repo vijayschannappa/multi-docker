@@ -20,5 +20,7 @@ after_success:
   - docker push vijayschannappa/multi-nginx
   - docker push vijayschannappa/multi-server
   - docker push vijayschannappa/multi-worker
-  
+
+install: travis_wait 30 mvn install
+
 
